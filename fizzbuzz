@@ -9,6 +9,23 @@ exports.count = function (start, end){
 		output = output + " " + (counter + 1);
 	}
 
-	//return the output, e.g "1 2 3 4 5"
+	//return the output, e.g "1 2 3 4 5..."
 	return output;
-}
+};
+
+exports.fizzer = function (num){
+	//if (num % 3 === 0) {
+	//	return "fizz";
+	//} 
+	//return num;
+	return 0 === num % 3 ? "fizz" : num;
+};
+
+exports.buzzer = function (num){
+	return 0 === num % 5 ? "buzz" : num;
+};
+
+exports.fizzbuzzer = function (num){
+	return 0 === num % 3, 0 === num % 5 ? "fizzbuzz" : num
+};
+
