@@ -2,8 +2,9 @@
 var fb = require('../fizzbuzz');
 
 describe("a program that impelments the fizzbuzz game", function() {
-	it("count from 1 to 15", function() {
-		expect(fb.count(1, 15)).toBe("1 2 3 4 5 6 7 8 9 10 11 12 13 14 15");
+	
+	it("count from 1 to 15 and play fizzbuzz", function() {
+		expect(fb.count(1, 15)).toBe("1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz");
 	});
 
 	it("replaces multiples of 3 with fizz", function() {
